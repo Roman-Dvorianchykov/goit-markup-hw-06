@@ -388,52 +388,77 @@
             </div>
             <div class="h3-list-socials subscribe">
                 <h3 class="h3 footer">Подпишитесь на рассылку</h3>
-                <div class="list-socials footer">
+                <form class="list-socials footer">
                     <input type="email" name="email" placeholder="E-mail" id="email-footer">
-                    <div class="button-icon-telegramm">
-                        <button type="button" class="hero-button subscribe">Подписаться</button>
-                        <svg class="icon-telegramm" width="24" height="24">
-                            <use href=".\images\symbol-defs.svg#icon-telegramm">
-                            </use>
-                        </svg>
-                    </div>
-                </div>
+                        <button type="submit" class="hero-button subscribe" name="submit">
+                            Подписаться
+                            <svg class="icon-telegramm" width="24" height="24">
+                                <use href=".\images\symbol-defs.svg#icon-telegramm">
+                                </use>
+                            </svg>
+                        </button>
+                </form>
             </div>
         </div>
     </footer>
    
     <div class="backdrop is-hidden" data-modal>
-        <form action="" class="modal">
+           
+        <form  class="modal" name="modal">
             <h3 class="h3-modal">
                 Оставьте свои данные, мы вам перезвоним
             </h3>
-            <label for="name">Имя</label>
-            <input type="text" text="" id="name" class="input">
-            <label for="phone">Телефон</label>
-            <input type="text" text="" id="phone" class="input">
-            <label for="email">Почта</label>
-            <input type="text" text="" id="email" class="input">
-            <label for="comment">Комментарий</label>
-            <input type="text" text="" id="comment" class="input comment" placeholder="Введите текст">
-            <input type="checkbox" name="" id="checkbox">
-            <label for="checkbox">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-
-            <button class="hero-button">Отправить</button>
-            
-            
-            
-            
-            
-            
-            
-            <div type="button" class="close-black" data-modal-close>
+            <div class="close-black" data-modal-close>
                 <svg class="icon-close-black" width="11" height="11">
                     <use href=".\images\symbol-defs.svg#icon-close-black">
                     </use>
                 </svg>
             </div>
+            <label for="name">Имя</label>
+            <div class="input-modal">
+                <input type="text" id="name" class="input">
+                <svg class="modal-icon person" width="12px" height="12px">
+                    <use href=".\images\symbol-defs.svg#icon-person"></use>
+                </svg>
+            </div>
+
+            <label for="phone">Телефон</label>
+            <div class="input-modal">
+                <input type="tel" id="phone" class="input" name="tel">
+                <svg class="modal-icon phone" width="12px" height="12px">
+                    <use href=".\images\symbol-defs.svg#icon-phone"></use>
+                </svg>
+            </div>
+
+            <label for="email">Почта</label>
+            <div class="input-modal">   
+                <input type="email" name="email" class="input" required />
+                <svg class="modal-icon mailto2" width="12px" height="12px">
+                    <use href=".\images\symbol-defs.svg#icon-mailto2"></use>
+                </svg>
+            </div>
+
+            <label for="comment">Комментарий</label>
+            <textarea  id="comment" placeholder="Введите текст" class="input comment">
+            </textarea>
+            
+            <div class="checkbox">
+                <input class="checkbox-field" type="checkbox" name="checkbox" id="checkbox" checked>
+                <span class="fake">
+                    <svg class="modal-icon checkmark" width="16px" height="15px">
+                        <use href=".\images\symbol-defs.svg#icon-checkmark"></use>
+                    </svg>
+                </span>
+                <label for="checkbox" class="label-checkbox">Соглашаюсь с рассылкой и принимаю <a class="agreements-terms">Условия
+                    договора</a>
+                </label>  
+            </div>
+            <button type="submit" class="hero-button" name="">Отправить</button>
+            
         </form>
+    
     </div>
+   
     <script src="./js/modal.js"></script>
 </body>
 
