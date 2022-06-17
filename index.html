@@ -303,7 +303,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <svg class="icon-company" width="44" height="41" fill="#757575">
+                            <svg class="icon-company" width="45" height="42" fill="#757575">
                                 <use href=".\images\symbol-defs.svg#icon-company">
                                 </use>
                             </svg>
@@ -409,12 +409,16 @@
                 Оставьте свои данные, мы вам перезвоним
             </h3>
             <div class="close-black" data-modal-close>
-                <svg class="icon-close-black" width="11" height="11">
+                <svg class="icon-close-black" width="17px" height="17px">
                     <use href=".\images\symbol-defs.svg#icon-close-black">
                     </use>
                 </svg>
             </div>
-            <label for="name">Имя</label>
+            <label for="name">
+                <span class="name-of-label">
+                Имя
+                </span>
+            </label>
             <div class="input-modal">
                 <input type="text" id="name" class="input">
                 <svg class="modal-icon person" width="12px" height="12px">
@@ -422,7 +426,11 @@
                 </svg>
             </div>
 
-            <label for="phone">Телефон</label>
+            <label for="phone">
+                <span class="name-of-label">
+                Телефон
+                </span>
+            </label>
             <div class="input-modal">
                 <input type="tel" id="phone" class="input" name="tel">
                 <svg class="modal-icon phone" width="12px" height="12px">
@@ -430,7 +438,11 @@
                 </svg>
             </div>
 
-            <label for="email">Почта</label>
+            <label for="email">
+                <span class="name-of-label">
+                Почта
+                </span>
+            </label>
             <div class="input-modal">   
                 <input type="email" name="email" class="input" required />
                 <svg class="modal-icon mailto2" width="12px" height="12px">
@@ -438,12 +450,16 @@
                 </svg>
             </div>
 
-            <label for="comment">Комментарий</label>
-            <textarea  id="comment" placeholder="Введите текст" class="input comment">
-            </textarea>
+            <label for="comment">
+                <span class="name-of-label">
+                Комментарий
+                </span>
+            </label>
+            <textarea  id="comment" placeholder="Введите текст" class="input comment"></textarea>
+            
             
             <div class="checkbox">
-                <input class="checkbox-field" type="checkbox" name="checkbox" id="checkbox" checked>
+                <input class="checkbox-field" type="checkbox" name="checkbox" id="checkbox">
                 <span class="fake">
                     <svg class="modal-icon checkmark" width="16px" height="15px">
                         <use href=".\images\symbol-defs.svg#icon-checkmark"></use>
@@ -461,6 +477,3 @@
    
     <script src="./js/modal.js"></script>
 </body>
-
-
-
